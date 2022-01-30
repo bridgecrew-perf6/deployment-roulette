@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEPLOY_PERCENTAGE=0.5
+DEPLOY_PERCENTAGE=2
 
 function canary_deploy {
   NUM_OF_V1_PODS=$(kubectl get pods -n udacity | grep -c canary-v1)
@@ -8,7 +8,7 @@ function canary_deploy {
   NUM_OF_V2_PODS=$(kubectl get pods -n udacity | grep -c canary-v2)
   echo "V2 PODS: $NUM_OF_V2_PODS"
 
-  REPLICAS=$DEPLOY_PERCENTAGE * $NUM_OF_V2_PODS
+  REPLICAS=$((DEPLOY_PERCENTAGE * NUM_OF_V2_PODS))
 
   kubectl scale deployment canary-v2 --replicas=$REPLICAS
   kubectl scale deployment canary-v1 --replicas=$REPLICAS
