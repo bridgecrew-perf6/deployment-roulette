@@ -1,6 +1,8 @@
 # Deployment Roulette
 
-The solution files are within their corresponding folder in `/starter/apps/`.
+## Solutions
+
+The solution files are within their corresponding folder in `/starter/apps/`. Including the metrics-server (`/starter/apps/metrics-server`) and architecture diagram (`/starter/apps/diagram`).
 
 ## Getting Started
 
