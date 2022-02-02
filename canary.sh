@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# 1 / PERCENTAGE => 1 / 0.5 = 2 (1 / 50%)
 DEPLOY_PERCENTAGE=2
 
 function canary_deploy {
@@ -20,7 +21,7 @@ function canary_deploy {
     ATTEMPTS=$((attempts + 1))
     sleep 1
   done
-  echo "Canary deployment of $DEPLOY_PERCENTAGE percentage successful!"
+  echo "Canary deployment of 1 / $DEPLOY_PERCENTAGE percentage successful!"
 }
 
 # Initialize canary-v2 deployment
