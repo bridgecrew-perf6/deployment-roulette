@@ -18,7 +18,7 @@ resource "kubernetes_service" "green" {
   }
   spec {
     selector = {
-      app = "blue"
+      app = "green"
     }
 
     port {

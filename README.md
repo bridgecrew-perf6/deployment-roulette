@@ -1,5 +1,7 @@
 # Deployment Roulette
 
+The solution files are within their corresponding folder in `/starter/apps/`.
+
 ## Getting Started
 
 ### Dependencies
